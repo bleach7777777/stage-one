@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下拉菜单</title>
+    <style>
+        ul,
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        p {
+            margin: 0;
+        }
+        
+        .tab-box {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .title {
+            padding: 5px 10px;
+            color: white;
+            background-color: lightblue;
+        }
+        
+        .tab-list {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translate(0, 100%);
+            /* 问题：tab宽度受制于tab-box，除了手动给它个宽度，还有啥别的办法吗 */
+            min-width: 150%;
+            box-shadow: 2px 2px 4px rgb(243, 243, 243);
+        }
+        
+        .tab-list-item {
+            padding: 10px 20px;
+            background-color: white;
+        }
+        
+        .tab-list-item:hover {
+            background-color: rgb(243, 243, 243);
+        }
+        
+        .tab-box:hover .tab-list {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab-box">
+        <p class="title">下拉菜单</p>
+        <ul class="tab-list">
+            <li class="tab-list-item">菜单项1</li>
+            <li class="tab-list-item">菜单项2</li>
+            <li class="tab-list-item">菜单项3</li>
+        </ul>
+    </div>
+</body>
+
+</html>

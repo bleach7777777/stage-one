@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水平滚动菜单</title>
+    <style>
+        ul,
+        li {
+            list-style: none;
+        }
+        /* .hide-scroll {
+            width: 2326px;
+            overflow: hidden;
+        } */
+        
+        .show-box {
+            overflow: hidden;
+        }
+        
+        .content-box {
+            display: flex;
+            /* width: 2326px; */
+            overflow: scroll;
+        }
+        /* 隐藏滚动条方式1---需要考虑兼容性 */
+        
+        .content-box::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .tab-item {
+            /* 让列表项flex布局后不被压缩 */
+            flex-shrink: 0;
+            padding: 10px 210px;
+            border: 1px solid lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 隐藏滚动条方式2---外套一个容器，宽度和内容box一致（缺点即需要固定宽度） -->
+    <!-- <div class="hide-scroll"> -->
+    <div class="show-box">
+        <ul class="content-box">
+            <li class="tab-item">菜单项1</li>
+            <li class="tab-item">菜单项2</li>
+            <li class="tab-item">菜单项3</li>
+            <li class="tab-item">菜单项4</li>
+            <li class="tab-item">菜单项5</li>
+        </ul>
+    </div>
+    <!-- </div> -->
+</body>
+
+</html>

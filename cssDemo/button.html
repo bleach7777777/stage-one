@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开关样式</title>
+    <style>
+        .btn {
+            visibility: hidden;
+        }
+
+        .btn-label {
+            position: relative;
+            display: inline-block;
+            width: 25px;
+            height: 15px;
+            background-color: lightgrey;
+            border-radius: 35%;
+        }
+
+        .btn-label::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .btn:checked+.btn-label {
+            background-color: blue;
+        }
+
+        .btn:checked+.btn-label::before {
+            transform: translateX(90%);
+        }
+    </style>
+</head>
+
+<body>
+    <input class="btn" type="checkbox" name="testBtn" id="testBtn">
+    <label class="btn-label" for="testBtn"></label>
+</body>
+
+</html>

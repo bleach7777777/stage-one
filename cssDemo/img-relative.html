@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片相关</title>
+    <style>
+        /* 基础版 */
+        .img-box {
+            position: relative;
+            display: inline-block;
+        }
+
+        .cover-tip {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+            z-index: 1;
+            opacity: 0;
+        }
+
+        .img-box:hover .cover-tip {
+            opacity: 1;
+            transition: .5s ease;
+        }
+
+        .swiper-img {
+            width: 300px;
+            height: 150px;
+        }
+
+        /* 由上至下淡入 */
+        .img-box1 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .swiper-img1 {
+            width: 300px;
+            height: 150px;
+        }
+
+        .cover-tip1 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 0;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+            z-index: 1;
+        }
+
+        .img-box1:hover .cover-tip1 {
+            height: 100%;
+            opacity: 1;
+            transition: .5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>基础版</h3>
+    <div class="img-box">
+        <img class="swiper-img" src="./assets/swiper.jpg" alt="">
+        <div class="cover-tip">蒙层提示</div>
+    </div>
+    <h3>由上至下淡入</h3>
+    <div class="img-box1">
+        <img class="swiper-img1" src="./assets/swiper.jpg" alt="">
+        <div class="cover-tip1">蒙层提示</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>气泡提示</title>
+    <style>
+        .tip-box {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tip {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 110%);
+            display: none;
+            padding: 5px 10px;
+            color: white;
+            background-color: rgb(225, 225, 225);
+            border-radius: 5px;
+        }
+
+        .tip::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            border-width: 4px;
+            border-style: solid;
+            border-bottom: 4px solid rgb(225, 225, 225);
+            /* border-color: transparent transparent rgb(225, 225, 225) transparent; */
+        }
+
+        .tip-box:hover .tip {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tip-box">
+        <div>鼠标移动到这里会有提示</div>
+        <div class="tip">提示内容</div>
+    </div>
+</body>
+
+</html>

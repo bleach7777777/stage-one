@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分页</title>
+    <style>
+        ul,
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: lightgrey;
+        }
+
+        /* 样式1 */
+        .page-box1 {
+            display: flex;
+        }
+
+        .page-item1 {
+            padding: 5px 10px;
+            color: blue;
+            background-color: white;
+            border-right: 1px solid lightgray;
+        }
+
+        .page-item1:first-child {
+            font-size: 10px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .page-item1:last-child {
+            font-size: 10px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .select-item1 {
+            color: white;
+            background-color: blue;
+        }
+
+        .page-item1:hover {
+            background-color: rgb(225, 225, 225);
+        }
+
+        .select-item1:hover {
+            background-color: blue;
+        }
+
+        /* 样式2 */
+        .page-box2 {
+            display: flex;
+        }
+
+        .page-item2 {
+            padding: 5px 10px;
+            background-color: white;
+            border-right: 1px solid lightgray;
+        }
+
+        .page-item2:first-child {
+            font-size: 10px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .page-item2:last-child {
+            font-size: 10px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .select-item2 {
+            color: white;
+            background-color: red;
+        }
+
+        .page-item2:hover {
+            color: red;
+            background-color: rgb(225, 225, 225);
+        }
+
+        .select-item2:hover {
+            color: white;
+            background-color: red;
+        }
+
+        /* 样式3 */
+        .page-box3 {
+            display: flex;
+        }
+
+        .page-item3 {
+            padding: 5px 10px;
+            margin: 0 5px;
+            color: white;
+        }
+
+        .select-item3 {
+            background-color: green;
+            border-radius: 50%;
+        }
+
+        .page-item3:hover {
+            background-color: green;
+            border-radius: 50%;
+        }
+
+        /* 样式4 */
+        .page-box4 {
+            display: flex;
+        }
+
+        .page-item4 {
+            padding: 5px 10px;
+            margin: 0 5px;
+            color: white;
+            background-color: rgba(248, 245, 44, 0.89);
+            border-radius: 50%;
+        }
+
+        .page-item4:first-child {
+            border-radius: 15px 0 0 15px;
+        }
+
+        .page-item4:last-child {
+            border-radius: 0 15px 15px 0;
+        }
+
+        .select-item4 {
+            background-color: orange;
+        }
+
+        .page-item4:hover {
+            background-color: orange;
+        }
+
+        /* 样式5 */
+        .page-box5 {
+            display: inline-block;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.1) 100%);
+        }
+
+        .page-item5 {
+            float: left;
+            padding: 5px;
+            margin: 0 5px;
+            color: white;
+        }
+
+        .page-item5:first-child,
+        .page-item5:last-child {
+            color: blue;
+        }
+
+        .select-item5 {
+            position: relative;
+            background-color: blue;
+        }
+
+        .page-item5-middle:hover {
+            padding: 2.5px 5px;
+            margin: 2.5px 5px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+
+        .page-item5-side:hover {
+            color: white;
+        }
+
+        /* 上面的样式怎么写 */
+        /* .select-item5::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-10px, -100%);
+            width: 18px;
+            border: 10px solid transparent;
+            border-bottom: 7px solid blue;
+            z-index: -1;
+        } */
+
+        /* 样式6 */
+        .page-box6 {
+            display: flex;
+        }
+
+        .page-item6 {
+            padding: 10px 15px;
+            background-color: white;
+            border-right: 1px solid lightgrey;
+        }
+
+        .page-item6:first-child {
+            background-image: linear-gradient(to left, lightgrey 0%, white 30%, white 100%);
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        .page-item6:last-child {
+            background-image: linear-gradient(to right, lightgrey 0%, white 30%, white 100%);
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        .select-item6 {
+            color: red;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .page-item6:hover {
+            color: red;
+            background-color: rgb(225, 225, 225);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>样式1</h3>
+    <ul class="page-box1">
+        <li class="page-item1">&lt;&lt;</li>
+        <li class="page-item1 select-item1">1</li>
+        <li class="page-item1">2</li>
+        <li class="page-item1">3</li>
+        <li class="page-item1">4</li>
+        <li class="page-item1">5</li>
+        <li class="page-item1">6</li>
+        <li class="page-item1">7</li>
+        <li class="page-item1">8</li>
+        <li class="page-item1">9</li>
+        <li class="page-item1">&gt;&gt;</li>
+    </ul>
+    <h3>样式2</h3>
+    <ul class="page-box2">
+        <li class="page-item2">&lt;&lt;</li>
+        <li class="page-item2 select-item2">1</li>
+        <li class="page-item2">2</li>
+        <li class="page-item2">3</li>
+        <li class="page-item2">4</li>
+        <li class="page-item2">5</li>
+        <li class="page-item2">6</li>
+        <li class="page-item2">7</li>
+        <li class="page-item2">8</li>
+        <li class="page-item2">9</li>
+        <li class="page-item2">&gt;&gt;</li>
+    </ul>
+    <h3>样式3</h3>
+    <ul class="page-box3">
+        <li class="page-item3">&lt;&lt;</li>
+        <li class="page-item3 select-item3">1</li>
+        <li class="page-item3">2</li>
+        <li class="page-item3">3</li>
+        <li class="page-item3">4</li>
+        <li class="page-item3">5</li>
+        <li class="page-item3">6</li>
+        <li class="page-item3">7</li>
+        <li class="page-item3">8</li>
+        <li class="page-item3">9</li>
+        <li class="page-item3">&gt;&gt;</li>
+    </ul>
+    <h3>样式4</h3>
+    <ul class="page-box4">
+        <li class="page-item4">&lt;Previous</li>
+        <li class="page-item4 select-item4">1</li>
+        <li class="page-item4">2</li>
+        <li class="page-item4">3</li>
+        <li class="page-item4">4</li>
+        <li class="page-item4">5</li>
+        <li class="page-item4">6</li>
+        <li class="page-item4">7</li>
+        <li class="page-item4">8</li>
+        <li class="page-item4">9</li>
+        <li class="page-item4">Next&gt;</li>
+    </ul>
+    <h3>样式5</h3>
+    <ul class="page-box5">
+        <li class="page-item5 page-item5-side">&lt;</li>
+        <li class="page-item5 select-item5">1</li>
+        <li class="page-item5 page-item5-middle">2</li>
+        <li class="page-item5 page-item5-middle">3</li>
+        <li class="page-item5 page-item5-middle">4</li>
+        <li class="page-item5 page-item5-middle">5</li>
+        <li class="page-item5 page-item5-middle">6</li>
+        <li class="page-item5 page-item5-middle">7</li>
+        <li class="page-item5 page-item5-middle">8</li>
+        <li class="page-item5 page-item5-middle">9</li>
+        <li class="page-item5 page-item5-side">&gt;</li>
+    </ul>
+    <h3>样式6</h3>
+    <ul class="page-box6">
+        <li class="page-item6">&lt;</li>
+        <li class="page-item6 select-item6">1</li>
+        <li class="page-item6">2</li>
+        <li class="page-item6">3</li>
+        <li class="page-item6">4</li>
+        <li class="page-item6">5</li>
+        <li class="page-item6">6</li>
+        <li class="page-item6">7</li>
+        <li class="page-item6">8</li>
+        <li class="page-item6">9</li>
+        <li class="page-item6">&gt;</li>
+    </ul>
+</body>
+
+</html>

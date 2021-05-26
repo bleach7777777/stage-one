@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式搜索菜单栏</title>
+    <style>
+        ul,
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(235, 235, 235);
+        }
+
+        .nav-list {
+            display: flex;
+            flex-shrink: 0;
+        }
+
+        .nav-item {
+            padding: 10px 20px;
+        }
+
+        .nav-item:hover {
+            background-color: lightgrey;
+        }
+
+        .select-item {
+            color: white;
+            background-color: lightskyblue;
+        }
+
+        .select-item:hover {
+            background-color: lightskyblue;
+        }
+
+        .search {
+            width: 150px;
+            height: 100%;
+            margin: auto 20px;
+        }
+
+        @media screen and (max-width: 650px) {
+            .nav-box {
+                flex-direction: column;
+            }
+
+            .nav-list {
+                flex-direction: column;
+            }
+
+            .search {
+                width: 100%;
+                padding: 10px 20px;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-box">
+        <ul class="nav-list">
+            <li class="nav-item select-item">菜单项1</li>
+            <li class="nav-item">菜单项2</li>
+            <li class="nav-item">菜单项3</li>
+        </ul>
+        <input class="search" type="text" placeholder="搜索...">
+    </div>
+</body>
+
+</html>

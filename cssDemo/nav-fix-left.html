@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定左侧导航栏</title>
+    <style>
+        ul,
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+
+        .nav-box {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 10%;
+            background-color: rgb(237, 237, 237);
+        }
+
+        .nav-item {
+            padding: 10px 20px;
+        }
+
+        .nav-item:hover {
+            background-color: lightgrey;
+        }
+
+        .content-box {
+            margin-left: 10%;
+        }
+
+        .content-item {
+            padding: 100px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root-box">
+        <ul class="nav-box">
+            <li class="nav-item"><a href="#miaodian">菜单项1<br>(锚点跳转)</a></li>
+            <li class="nav-item">菜单项2</li>
+            <li class="nav-item">菜单项3</li>
+        </ul>
+        <div class="content-box">
+            <p class="content-item">内容</p>
+            <p class="content-item">内容</p>
+            <p class="content-item">内容</p>
+            <p class="content-item">内容</p>
+            <p class="content-item">内容</p>
+            <p class="content-item">内容</p>
+            <p class="content-item">内容</p>
+            <p class="content-item">内容</p>
+            <p class="content-item" id="miaodian">内容1</p>
+        </div>
+    </div>
+</body>
+
+</html>

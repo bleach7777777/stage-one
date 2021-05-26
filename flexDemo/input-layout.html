@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>输入框布局</title>
+    <style>
+        input {
+            border: none;
+        }
+
+        button {
+            border: none;
+        }
+
+        .sms-box {
+            float: left;
+            display: flex;
+            border: 1px solid grey;
+        }
+
+        .tag {
+            padding: 10px;
+            background-color: lightgrey;
+            border-right: 1px solid grey;
+        }
+
+        .input-box {
+            width: 100px;
+            padding: 10px;
+        }
+
+        .btn {
+            padding: 10px;
+            background-color: lightgrey;
+            border-left: 1px solid grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sms-box">
+        <div class="tag">验证码</div>
+        <input class="input-box" type="text" placeholder="请输入验证码">
+        <button class="btn">验证</button>
+    </div>
+</body>
+
+</html>

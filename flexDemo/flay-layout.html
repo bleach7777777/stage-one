@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>悬挂式布局</title>
+    <style>
+        h6,
+        p {
+            margin: 0;
+        }
+
+        .fly-box {
+            display: flex;
+            width: 300px;
+            padding: 10px;
+            background-color: lightgrey;
+            border: 1px solid lightgrey;
+            border-radius: 10px;
+        }
+
+        .img {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+        }
+
+        .content {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fly-box">
+        <img class="img" src="./assets/tab-logo1.jpg" alt="">
+        <div class="content">
+            <h6 class="title">标题内容</h6>
+            <p class="txt">段落内容段落内容段落内容段落内容段落内容段落内容段落内容段落内容段落内容段落内容段落内容</p>
+        </div>
+    </div>
+</body>
+
+</html>

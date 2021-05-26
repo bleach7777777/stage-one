@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百分比布局</title>
+    <style>
+        ul,
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .grid-box {
+            display: flex;
+        }
+
+        .item {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 1px solid lightgrey;
+        }
+
+        .fix-item {
+            flex-basis: 50%;
+        }
+
+        .no-fix-item {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="grid-box">
+        <li class="item fix-item">固定网格</li>
+        <li class="item no-fix-item">自适应网格1</li>
+        <li class="item no-fix-item">自适应网格2</li>
+    </ul>
+</body>
+
+</html>

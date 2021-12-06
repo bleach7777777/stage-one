@@ -1,0 +1,123 @@
+/* 页面样式 */
+@charset 'utf-8';
+
+/* 搜索框 */
+.search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
+
+.search input {
+  width: 94%;
+  height: 30px;
+  padding: 0 2%;
+  margin: 5px 2% 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.search .icon-sousuo {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 2%;
+  margin-left: 2%;
+  background-color: white;
+  border-radius: 5px 0 0 5px;
+}
+
+/* 菜单栏1 */
+.tab-1 {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.tab-1 .tab-list {
+  display: flex;
+  overflow: scroll;
+}
+
+.tab-1 .tab-list-item {
+  flex-shrink: 0;
+  margin: 0 10px;
+}
+
+.tab-1 .icon-liebiao {
+  align-self: flex-end;
+  width: 50px;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 18px;
+  background-color: white;
+}
+
+/* 主体内容 */
+
+.main {
+  margin-top: 90px;
+  margin-bottom: 56px;
+}
+
+.main .news-list-item {
+  margin: 10px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.main .news-list-item .title {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.main .news-list-item .content {
+  padding: 10px;
+}
+
+.main .news-list-item .content-tag {
+  padding: 2px;
+  margin-right: 4px;
+  font-size: 8px;
+  color: red;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+/* 菜单栏2 */
+
+.tab-2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: lightgrey;
+}
+
+.tab-2 .tab-list {
+  display: flex;
+  justify-content: space-around;
+  height: 56px;
+  line-height: 56px;
+}
+
+.tab-2 .tab-list-item {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tab-2 .tab-list-item i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+}

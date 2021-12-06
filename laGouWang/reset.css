@@ -1,0 +1,36 @@
+/*
+ * Description: 覆盖原生样式
+ * Author: bleach7777777
+ * File Created: Wednesday, 27th October 2021 11:05:11 am
+ * -------
+ * Last Modified: Wednesday, 27th October 2021 11:38:38 am
+ * Modified By: bleach7777777
+ */
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  padding: 0;
+  border: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: white;
+}

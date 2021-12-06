@@ -1,0 +1,535 @@
+/*
+ * Description: 拉勾网样式
+ * Author: bleach7777777
+ * File Created: Wednesday, 27th October 2021 10:16:36 am
+ * -------
+ * Last Modified: Wednesday, 27th October 2021 11:37:48 am
+ * Modified By: bleach7777777
+ */
+
+/* 头部导航栏 */
+.nav {
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 30px;
+  font-size: 12px;
+  line-height: 40px;
+  color: white;
+  background-color: #32373e;
+}
+
+.nav-left-tip1 {
+  margin-right: 32px;
+  font-size: 22px;
+  color: #00b38a;
+}
+
+.nav-left-tip2 {
+  margin-right: 14px;
+  color: #00b38a;
+}
+
+.nav-left-tip3 {
+  margin-right: 36px;
+  color: #afb5c0;
+}
+
+.nav-left-list .item {
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.nav-left-list .item:first-child {
+  background-color: #24282c;
+}
+
+.nav-right-tip1,
+.nav-right-tip2 {
+  color: #93b5c0;
+}
+
+.nav-right-line {
+  display: inline-block;
+  margin: 0 12px;
+  width: 1px;
+  height: 16px;
+  vertical-align: middle;
+  background-color: #93b5c0;
+}
+
+.nav-right-tip3 {
+  margin-left: 40px;
+  margin-right: 24px;
+  color: #08d7a2;
+}
+
+.nav-right-tip4 {
+  color: #93b5c0;
+}
+
+/* 工具栏 */
+.tool {
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 0 30px;
+  font-size: 12px;
+  color: white;
+  background-color: #00b38a;
+}
+
+.tool-left-bg {
+  width: 224px;
+  height: 100%;
+}
+
+.tool-left-tip .tip-img {
+  margin: 30px 0;
+}
+
+.tool-right-phone {
+  width: 162px;
+  height: 36px;
+  margin-right: 25px;
+}
+
+.tool-right-sms {
+  width: 148px;
+  height: 36px;
+  margin-right: 12px;
+}
+
+.tool-right-sms .sms-code {
+  width: 94px;
+}
+
+.tool-right-sms .sms-btn {
+  font-size: 12px;
+  color: #00b38a;
+  background-color: white;
+}
+
+.tool-right-btn {
+  width: 106px;
+  height: 36px;
+  font-size: 13px;
+  line-height: 36px;
+  color: white;
+  background-color: #00b38a;
+  border: 1px solid white;
+}
+
+/* 搜索栏 */
+
+.search {
+  padding: 30px 164px;
+}
+
+.search-box {
+  width: 938px;
+  height: 48px;
+}
+
+.search-box-word {
+  width: 790px;
+  height: 46px;
+  border: 1px solid gray;
+  border-right: none;
+}
+
+.search-box-btn {
+  flex-grow: 1;
+  height: 100%;
+  font-size: 18px;
+  color: white;
+  background-color: #00b38a;
+}
+
+.search-key {
+  height: 38px;
+  line-height: 38px;
+  font-size: 12px;
+}
+
+.search-key-title {
+  color: #778ab9;
+}
+
+.search-key-word {
+  margin: 0 12px;
+  color: #00c1cc;
+}
+
+/* 菜单栏 */
+.menu {
+  margin: 0 32px;
+}
+
+.menu-list {
+  flex-grow: 1;
+  margin-right: 32px;
+}
+
+.menu-list-item {
+  position: relative;
+  margin-bottom: 32px;
+  color: #555;
+}
+
+.menu-list-item .title {
+  font-size: 17px;
+}
+
+.menu-list-item .text {
+  margin: 0 12px;
+  font-size: 12px;
+}
+
+.menu-list-item .icon-more {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 12px;
+}
+
+.menu-img {
+  width: 840px;
+  height: 348px;
+}
+
+/* 职位列表 */
+.job {
+  margin: 0 32px;
+  text-align: center;
+}
+
+.job-title-item {
+  position: relative;
+  padding-bottom: 15px;
+  margin-right: 60px;
+  font-size: 16px;
+  color: #999;
+}
+
+.job-title .active-item {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.job-tip {
+  margin: 24px 0;
+}
+
+.job-tip-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 14px;
+  color: white;
+  background-color: #e6e6e6;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.job-tip-text1 {
+  margin-right: 55px;
+  font-size: 12px;
+  color: #999;
+}
+
+.job-tip-text2 {
+  font-size: 12px;
+  color: #00b38a;
+}
+
+.job-list {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.job-list-item {
+  flex-basis: 30%;
+  padding: 24px 17px 16px;
+  margin-bottom: 14px;
+  border: 1px solid lightgrey;
+}
+
+.job-list-item .info {
+  padding-bottom: 20px;
+}
+
+.job-list-item .info-detail-name {
+  font-size: 18px;
+  color: #000;
+}
+
+.job-list-item .info-detail-time {
+  margin: 0 8px;
+  font-size: 18px;
+  color: #9999b2;
+}
+
+.job-list-item .info-detail-pay {
+  float: right;
+  font-size: 12px;
+  color: #fa6041;
+}
+
+.job-list-item .info-condition {
+  margin: 13px 0;
+  font-size: 18px;
+  color: #9999b2;
+}
+
+.job-list-item .info-tag-item {
+  padding: 8px 25px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #9999b2;
+  border: 1px solid rgb(234, 237, 238);
+  border-radius: 5px;
+}
+
+.job-list-item .company {
+  padding-top: 18px;
+  font-size: 12px;
+  border-top: 1px solid rgb(234, 237, 238);
+}
+
+.job-list-item .company-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 14px;
+}
+
+.job-list-item .company-info-name {
+  color: #555;
+}
+
+.job-list-item .company-info-tag {
+  color: #999;
+}
+
+.job-more-btn {
+  width: 390px;
+  height: 44px;
+  font-size: 16px;
+  color: #00b38a;
+  text-align: center;
+  line-height: 44px;
+  border: 1px solid #00b38a;
+}
+
+/* 公司列表 */
+.company {
+  margin: 30px 32px 0 32px;
+  text-align: center;
+}
+
+.company .company-title {
+  display: inline-block;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.company .company-tip {
+  height: 42px;
+}
+
+.company .company-tip-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 14px;
+  color: white;
+  background-color: #e6e6e6;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.company .company-tip-text1 {
+  margin-right: 55px;
+  font-size: 12px;
+  color: #999;
+}
+
+.company .company-tip-text2 {
+  font-size: 12px;
+  color: #00b38a;
+}
+
+.company .company-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.company .company-list-item {
+  flex-basis: 20%;
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  border: 1px solid lightgrey;
+}
+
+.company .company-list-item .img {
+  width: 80px;
+  height: 80px;
+}
+
+.company .company-list-item .name {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #000;
+}
+
+.company .company-list-item .tag {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+
+.company .company-list-item .desc {
+  padding-bottom: 16px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+  border-bottom: 1px dotted lightgrey;
+}
+
+.company .company-list-item .mark-item {
+  flex-basis: 32%;
+  margin-top: 18px;
+  font-size: 12px;
+  color: #999;
+  border-right: 1px solid #000;
+}
+
+.company .company-list-item .mark-item:last-child {
+  border-radius: none;
+}
+
+.company .company-list-item .mark-item-num {
+  color: #00b38a;
+}
+
+.company .company-more-btn {
+  width: 390px;
+  height: 44px;
+  font-size: 16px;
+  color: #00b38a;
+  text-align: center;
+  line-height: 44px;
+  border: 1px solid #00b38a;
+}
+
+/* 友情链接 */
+.friendly-link {
+  margin: 0 32px 50px 32px;
+}
+
+.friendly-link .friendly-link-title {
+  display: inline-block;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.friendly-link .friendly-link-list .item {
+  margin-top: 30px;
+  margin-right: 12px;
+  font-size: 12px;
+  color: #555;
+}
+
+.friendly-link .friendly-link-list .more {
+  float: right;
+  color: #9999c2;
+}
+
+/* 页脚 */
+
+.foot {
+  padding-top: 50px;
+  margin: 0 32px 50px 32px;
+  border-top: 1px solid lightgrey;
+}
+
+.foot-left {
+  width: 314px;
+  margin-right: 130px;
+  border-right: 1px solid lightgrey;
+}
+
+.foot-left .btn1,
+.btn2 {
+  width: 182px;
+  height: 46px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 46px;
+  color: #000;
+  border: 1px solid #00b38a;
+}
+
+.foot-left .link-item {
+  margin-right: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+.foot-right {
+  flex-grow: 1;
+}
+
+.foot-right-item {
+  flex-basis: 33%;
+}
+
+.foot-right-item .title {
+  margin-bottom: 26px;
+  font-size: 18px;
+  color: #555;
+}
+
+.foot-right-item .text {
+  height: 44px;
+  font-style: 12px;
+  line-height: 44px;
+  color: #555;
+}
+
+.foot-other {
+  height: 100px;
+  margin: 0 32px;
+  font-size: 12px;
+  color: #555;
+}
+
+.foot-other-text1,
+.foot-other-text2 {
+  float: left;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.foot-other-text3 {
+  float: left;
+  padding: 8px 10px;
+  margin-top: 28px;
+  border: 1px solid #000;
+}
+
+.foot-other-img {
+  float: right;
+  width: 190px;
+  height: 20px;
+  margin-top: 50px;
+}

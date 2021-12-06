@@ -1,0 +1,215 @@
+/* 头部 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* 头部1 */
+.h-tool-tab {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #d43b33;
+}
+
+.icon-maikefeng,
+.h-tool-tab .icon-paihangbang {
+  padding: 0 15px;
+  font-size: 24px;
+  color: white;
+}
+
+.search-box {
+  width: 268px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.icon-fangdajing {
+  padding-left: 46px;
+}
+
+.search-input {
+  border: none;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+/* 头部2 */
+.h-menu-tab {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.h-menu-tab-item {
+  position: relative;
+  padding: 6px 0;
+}
+
+.h-menu-tab-item:first-child {
+  color: #c04033;
+}
+
+.h-menu-tab-item:first-child::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #c04033;
+}
+
+.body {
+  margin-top: 82px;
+  margin-bottom: 48px;
+}
+
+/* 轮播图 */
+.b-ad-list {
+  width: 100%;
+  height: 140px;
+  background-image: url('./images/banner.png');
+  background-size: 100% 100%;
+}
+
+/* 菜单 */
+.b-menu-tab {
+  display: flex;
+  justify-content: space-around;
+  padding: 14px 0;
+  border-bottom: 1px solid gray;
+}
+
+.b-menu-tab-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-menu-tab-item i {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 4px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 54px;
+  color: #c04033;
+  border: 1px solid #c04033;
+  border-radius: 50%;
+}
+
+.b-menu-tab-item:nth-child(2) i {
+  font-size: 35px;
+}
+
+.b-menu-tab-item span {
+  font-size: 12px;
+}
+
+/* 推荐产品列表 */
+.b-reco-list {}
+
+/* 推荐产品列表标题 */
+.b-reco-list-title {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  padding: 10px 10px;
+  line-height: 45px;
+}
+
+.b-reco-list-title .left {
+  font-size: 14px;
+}
+
+.b-reco-list-title .left i {
+  color: #c04033;
+}
+
+.b-reco-list-title .right {
+  font-size: 12px;
+}
+
+/* 推荐产品列表内容 */
+.b-reco-list-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.b-reco-list-content .content-item {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.b-reco-list-content .content-item img {
+  height: 114px;
+  background-size: 100% 100%;
+}
+
+.b-reco-list-content .content-item span {
+  margin-top: 7px;
+  font-size: 12px;
+}
+
+/* 底部导航栏 */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-tab-list {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 4px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer-tab-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer-tab-list-item i {
+  font-size: 25px;
+}
+
+.footer-tab-list-item span {
+  font-size: 12px;
+}
+
+/* 覆盖原生样式 */
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
